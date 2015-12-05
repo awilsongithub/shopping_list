@@ -4,14 +4,15 @@
 
 require 'sinatra/base'
 
-Dir.glob('./{controllers,models,helpers}/*.rb').each { |file| require file }
+# I took this out...
+# Dir.glob('./{controllers,models,helpers}/*.rb').each { |file| require file }
 
-# require
-# require('./controllers/application')
-# require('./controllers/items')
-# require('./controllers/accounts')
-# require('./models/item') # to map to db table items
-# require('./models/account') # models/account.rb
+# require controllers and models
+require('./controllers/application')
+require('./controllers/items')
+require('./controllers/accounts')
+require('./models/item') # to map to db table items
+require('./models/account') # models/account.rb
 # require './app' not needed
 # run Sinatra::Application # run sinatra library
 
