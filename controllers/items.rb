@@ -1,4 +1,4 @@
-class ItemController < Sinatra::Base
+class ItemController < ApplicationController
 
    # display shopping list
    get '/' do

@@ -1,4 +1,4 @@
-class AccountController < Sinatra::Base
+class AccountController < ApplicationController
 
    # registration for user
    get '/register' do
