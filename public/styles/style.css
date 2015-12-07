@@ -1,0 +1,13 @@
+table {
+   width: 75%;
+}
+th, td {
+   border: 1px solid #ccc;
+   height: 2rem;
+}
+th {
+   background-color: A78883;
+}
+#page_header {
+   background-color: A78883;
+}
