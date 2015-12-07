@@ -20,7 +20,7 @@ require('./models/account') # models/account.rb
 ## james friday am explaniations: (thur video goes over this too)
 ## map resource to a controller
 map('/') { run ApplicationController}
-map('/') { run ItemController }
+map('/item') { run ItemController }
 map('/') { run AccountController }
 
 # this is mapping the root '/'

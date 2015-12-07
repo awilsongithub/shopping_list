@@ -8,7 +8,7 @@
   <strong><%= @message %></strong>
 <% end %>
 
-<li><a href='/create'>Add New Item</a></li>
+<li><a href='/item/create'>Add New Item</a></li>
 
 <table>
   <thead>
@@ -30,7 +30,7 @@
   </thead>
 
   <tbody>
-    <% @items.each do |task| %>
+    <% @items.each do |item| %>
       <tr>
         <td>
           <%= item.id %>
@@ -42,10 +42,10 @@
           <%= item.quantity %>
         </td>
         <td>
-          <a href='/update/<%= item.id %>'>Update</a>
+          <a href='/item/update/<%= item.id %>'>Update</a>
         </td>
         <td>
-          <a href='/destroy/<%= item.id %>'>Destroy</a>
+          <a href='/item/destroy/<%= item.id %>'>Destroy</a>
         </td>
       </tr>
     <% end %>
