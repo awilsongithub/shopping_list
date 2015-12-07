@@ -5,7 +5,6 @@ class ItemController < ApplicationController
       @items = Item.all
       # get all items in table and set to variable
       # now return a views
-      @message = "Went through the ItemController"
       erb :read
    end
 
