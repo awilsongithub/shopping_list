@@ -49,7 +49,7 @@ class ItemController < ApplicationController
    end
 
    # view to destroy a list item
-   get '/destroy' do
+   get '/destroy/:id' do
       p params
       @item = Item.find( params[:id] )
       erb :destroy

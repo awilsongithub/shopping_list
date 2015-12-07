@@ -27,6 +27,7 @@ class AccountController < ApplicationController
       authorization_check # for protected resources
       # instance var created so wrege can display in erbs
       @user_name = session[:current_user].user_name
+      @items = Item.all
       erb :read
    end
 
