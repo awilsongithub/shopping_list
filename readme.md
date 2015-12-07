@@ -1,8 +1,9 @@
 # DON'T FORGET THE SOYMILK
 The best shopping list app I've ever made.
 
-### TO DO LIST
+### TO DO LIST / QUESTIONS
 * watch videos on wknd of lectures
+* ok that all routes in config are '/'? added /item/ (why / before item? )
 * items has /=erb :index (read all tiems), get and post for /create, /update, /destroy
 * accounts has get & post for: /register, /=erb :index, /login, /logout, authorization_check
 * not found (common routes) in app.ctrllr so all ctrllrs can access

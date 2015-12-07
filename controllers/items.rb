@@ -5,6 +5,7 @@ class ItemController < ApplicationController
       @items = Item.all
       # get all items in table and set to variable
       # now return a views
+      @message = "Went through the ItemController"
       erb :read
    end
 
@@ -49,7 +50,7 @@ class ItemController < ApplicationController
    end
 
    # view to destroy a list item
-   get '/destroy' do
+   get '/destroy/:id' do
       p params
       @item = Item.find( params[:id] )
       erb :destroy
