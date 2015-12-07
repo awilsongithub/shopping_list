@@ -21,7 +21,7 @@ require('./models/account') # models/account.rb
 ## map resource to a controller
 map('/') { run ApplicationController}
 map('/') { run ItemController }
-map('/') { run AccountController}
+map('/') { run AccountController }
 
 # this is mapping the root '/'
 # so at http://localhost:9292/ it looks for ItemController routes....

@@ -25,9 +25,9 @@ class AccountController < ApplicationController
 
    get '/' do
       authorization_check # for protected resources
-      # instance var created so we can display in erbs
+      # instance var created so wrege can display in erbs
       @user_name = session[:current_user].user_name
-      erb :index
+      erb :read
    end
 
    get '/authorization_check' do

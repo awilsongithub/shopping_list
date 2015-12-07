@@ -3,17 +3,28 @@
       <meta charset="utf-8">
       <title>Shopping List</title>
 
-      <link rel="stylesheet" href="/style/main.css">
-      <script type="text/javascript" src="/scripts/app.js"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+      <!-- <link rel="stylesheet" href="/style/main.css">
+      <script type="text/javascript" src="/scripts/app.js"></script> -->
 
    </head>
    <body>
-      <h1>Don't Forget The Soymilk</h1>
-      <hr>
+      <div class="container">
+         <div class="row">
+            <h1 class="pull-left">Don't Forget The Soymilk</h1>
+            <img src="media/shopping_icon_64px.png" class="pull-left" alt="shopping icon" />
+         </div>
+         <hr>
 
-      <%= yield %>
-      <!-- not sure why yield is in blue (it's white in tskrrr) -->
+         <%= yield %>
+         <!-- not sure why yield is in blue (it's white in tskrrr) -->
 
-      <hr>
+         <hr>
+      </div>  <!-- end container -->
    </body>
 </html>
